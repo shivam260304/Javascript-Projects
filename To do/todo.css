@@ -1,0 +1,50 @@
+.container{
+    
+    background-color: white;
+    padding: 30px;
+    border: 3px solid #abcea1;
+    border-radius: 8px;
+    width: 300px;
+    height: 500px;
+}
+body{
+    margin: 4rem 30rem 4rem 20rem;
+    background-color: beige;
+    font-family: sans-serif;
+}
+#upperbox{
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(171, 206, 161, 0.35);
+}
+
+.fa-plus{
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #abcea1;
+}
+
+.lowerbox{
+    display: grid;
+    gap: 14px;
+}
+
+.lowerbox div{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #e2eede;
+    border: 3px solid #abcea1;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.options i{
+    cursor: pointer;
+}
