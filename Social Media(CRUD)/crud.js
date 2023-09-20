@@ -3,6 +3,8 @@ let input = document.getElementById("input");
 let msg = document.getElementById("msg");
 let posts = document.getElementById("posts");
 
+
+
 // submit (EVENTLISTENER)
 post.addEventListener("submit", (e)=>{
     e.preventDefault();
@@ -37,7 +39,8 @@ let createPost =()=>{
     `<div>
     <p>${data.text}</p>
     <span class="options">
-      <i onclick="up(this)" class="fas fa-edit"></i>
+      <i onclick="up(this)" data-bs-toggle="modal"
+      data-bs-target="#form" class="fas fa-edit"></i>
       <i onclick="d(this)" class="fas fa-trash-alt"></i>
     </span>
   </div>`;
@@ -52,6 +55,7 @@ let d =(e) =>{
 let up = (e)=>{
     input.value = e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
+
 }
 
 
